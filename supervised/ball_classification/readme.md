@@ -36,7 +36,12 @@ We're using a small custom dataset of balls with two features:
 
 - Two classes can be defined here:
 1. More weight and smooth surface can be classified as a Cricket Ball.
+
+![cricket ball](data/cricket.jpg)
+
 2. Less weight and rough surface can be classified as a Tennis Ball.
+
+![tennis ball](data/tennis.jpg)
 
 **What other features of a ball exist?**
 - Color : Red or Green
@@ -46,6 +51,16 @@ We're using a small custom dataset of balls with two features:
 - The feature color does not classify a ball type, in other words both cricket and tennis ball, both can have a red color or a green color which make confusion to classify. 
 - The feature size also does not classify a ball type, size of both the balls might be same irrespective of their types.
 - This is also known as **feature extraction**. (Not exact but similar)
+
+- Look at below pictures which generate ambiguities discussed above.
+
+1. A red coloured tennis ball.
+
+![red tennis ball](data/tennis_red.jpg)
+
+2. A white colour cricket ball.
+
+![white cricket ball](data/cricket_white.jpg)
 
 This simple case study helps us to understand
 - How **features and labels** are used in ML.
