@@ -58,6 +58,20 @@ def linearPredictor():
     plt.legend()
     plt.savefig(fname="sample.png")
         
+        
+    #calculate goodness of fit
+    
+    ss_t = 0
+    ss_r = 0
+    
+    for i in range(n):
+        y_pred = c + m * X[i]
+        ss_t += (Y[i] - mean_y)**2
+        ss_r += (Y[i] - y_pred)**2
+        
+    r2 = 1 - (ss_r / ss_t)
+    
+    print("Goodness of fit using r^2 method is : ",r2)
     
 def main():
     print("-------------------------Simple Linear Regression----------------------")
